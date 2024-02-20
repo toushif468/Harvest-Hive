@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 /*---------------------------------------- font------------------------------------------------------------------------------------- */
 @font-face{
@@ -187,9 +188,71 @@
 /* ------------------------Body------------------  */
 /*------------------- famrer------------------- */
 
+.farmer{
+    height: 100vh;
+    width: 100%;
+    background-color: #244441;
+    display: flex;
+}
 
+.left-div{
+    height: 100%;
+    flex: 45;
+    /* background-color: #F7C35F; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right: 50px;
+    position: relative;
+}
+.right-div{
+    height: 100%;
+    flex: 55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.farmer-img{
+    height: 500px;
+    width: 400px;
+    z-index: 2;
+    position: relative;
+}
+.farmer-img img{
+    height: 100%;
+    width: 100%;
+}
 
-
+.farmer-rectangle{
+    height: 400px;
+    width: 500px;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.farmer-stripimg{
+    width: 15px;
+    height: 200px;
+    background-color: #f7c35f;
+    position: absolute;
+    bottom: 50px;
+    left: -15px;
+    border-radius: 8px 0 0 8px;
+}
+.boxnum{
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    left: 65px;
+    bottom: -40px;
+}
 /*------------------- famrer------------------- */
 /*----------- Traders----------------------------------------------------------------------- */
 /* .Trader .Trader-rectangle{
