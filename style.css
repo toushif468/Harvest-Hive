@@ -2,6 +2,42 @@
     padding: 0;
     margin: 0;
 }
+/*---------------------------------------- font------------------------------------------------------------------------------------- */
+@font-face{
+    font-family: Century-Gothic;
+    src: url(../font/Century-Gothic.ttf);
+}
+@font-face{
+    font-family: Livvic-Bold;
+    src: url(../font/Livvic-Bold.ttf);
+}
+@font-face{
+    font-family: Livvic-Medium;
+    src: url(../font/Livvic-Medium.ttf);
+}
+@font-face{
+    font-family: Roboto-Black;
+    src: url(../font/Roboto-Black.ttf);
+}
+@font-face{
+    font-family: Roboto-Bold;
+    src: url(../font/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url(../font/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: fa-regular-400;
+    src: url(../font/fa-regular-400.ttf);
+}
+@font-face{
+    font-family: Livvic-SemiBold;
+    src: url(../font/Livvic-SemiBold.ttf);
+}
+
+/*---------------------------------------- font------------------------------------------------------------------------------------- */
+
 .header{
     width: 100%;
     height: 60px;
@@ -44,12 +80,12 @@
 .header .nav-items .items li a{
     text-decoration: none;
     text-transform:  uppercase;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Century-Gothic';
     color: white;
-   
+    line-height: 30px;
 
 } 
-.header .nav-items .items li a:hover{
+.header .nav-items .items li:hover a{
     border-bottom:4px solid #F7C35F;
     color: #fff;
     transform: translateY(-7px);
@@ -65,7 +101,7 @@
     width: 30%;
     height: 60%;
     background-color: #F7C35F;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Century-Gothic';
     border-radius: 5px;
     /* padding: 10px 20px; */
     margin: 10px 40px;
@@ -93,25 +129,31 @@
 }
 
 .banner .body-banner .heading1 .Agro-text{
-    font: italic  bold 3.5em Georgia;
+    font:  bold 3.5em 'Livvic-Bold';
+    /* 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: 'Livvic-Bold';
+     */
     
     color:#F7C35F;
 }
     .banner .body-banner .heading1 img{
      width: 3%;
      height: 5%;
-        position: absolute;
-        top: 39.5%;
-        left: 895px;
+     position: absolute;
+     top: 39.5%;
+     left: 895px;
 
 } 
 .banner .body-banner .Management-text{
-    font: italic  bold 3.5em Georgia;
+    font:   bold 3.5em ;
 
     color: #fff;
 }
 .banner .body-banner .heading2 .small-text{
-    font: Arial bold 20pt Georgia;
+    font: Arial bold 20pt 'Livvic-Bold';
     font-size: 20pt;
     color: #fff;
 }
@@ -157,9 +199,9 @@
     width: 35%;
     height: 70%;
     background-color: #244441;
-    z-index: 0;
+    z-index: 1;
     position: absolute;
-    top: 113.5%;
+    top: 116.3%;
 }
 .farmer .inner-farmer .farmer-img img{
     width: 35%;
@@ -315,4 +357,18 @@
     padding-right: 20px;
     padding-bottom: 20px;
 
+}
+.farmer .ricestyle img{
+  position: absolute;
+  top: 160%;
+}
+/*------------------- famrer------------------- */
+/*----------- Traders----------------------------------------------------------------------- */
+.Trader .Trader-rectangle{
+    width: 35%;
+    height: 70%;
+    background-color: #244441;
+    z-index: 1;
+    position: absolute;
+    
 }
