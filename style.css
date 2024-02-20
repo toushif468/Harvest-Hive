@@ -309,7 +309,7 @@
     position: absolute;
     left: 55%;
     top: 160%;
-    
+    /* this my change ? */
 } 
 .farmer .inner-farmer .about-farmer2 .providetxt{
     display: flex;
